@@ -88,8 +88,7 @@ export default {
 @use '../assets/styles/partial/variables.scss' as *;
 
 header {
-    padding: 1rem;
-    height: 120px;
+    height: 100px;
 
     nav {
         @include flex(row, space-between, center);
@@ -109,10 +108,13 @@ header {
                 text-transform: uppercase;
                 font-weight: bold;
                 font-family: "Open Sans Condensed", sans-serif;
+                border-bottom: 3px solid transparent;
+                transition: all 0.5s;
 
-                &.active {
+                &.active,
+                &:hover {
                     color: $blue;
-                    border-bottom: 2px solid $blue;
+                    border-bottom: 3px solid $blue;
                 }
             }
 

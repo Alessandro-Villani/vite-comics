@@ -20,13 +20,13 @@ export default {
 
 main {
     background-color: $black;
-    min-height: 120px;
+    min-height: 150px;
 
 
     p {
         color: white;
         font-size: 30px;
-        line-height: 120px;
+        line-height: 150px;
     }
 }
 </style>

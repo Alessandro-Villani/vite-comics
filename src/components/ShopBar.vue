@@ -60,9 +60,11 @@ export default {
 @use '../assets/styles/partial/variables.scss' as *;
 
 #shop {
-    height: 120px;
+    height: 150px;
     background-color: $blue;
     @include flex(row, center, center);
+    position: relative;
+    z-index: 1;
 
     ul {
         display: flex;
