@@ -1,9 +1,10 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
+import ShopBar from './components/ShopBar.vue';
 
 export default {
-    components: { AppHeader, AppMain }
+    components: { AppHeader, AppMain, ShopBar }
 }
 
 </script>
@@ -11,6 +12,7 @@ export default {
 <template>
     <AppHeader />
     <AppMain />
+    <ShopBar />
 </template>
 
 <style lang="scss">
