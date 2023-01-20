@@ -108,13 +108,13 @@ header {
                 text-transform: uppercase;
                 font-weight: bold;
                 font-family: "Open Sans Condensed", sans-serif;
-                border-bottom: 3px solid transparent;
+                border-bottom: 5px solid transparent;
                 transition: all 0.5s;
 
                 &.active,
                 &:hover {
                     color: $blue;
-                    border-bottom: 3px solid $blue;
+                    border-bottom: 5px solid $blue;
                 }
             }
 

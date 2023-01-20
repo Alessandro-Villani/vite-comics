@@ -158,7 +158,21 @@ export default {
             </div>
         </div>
         <div class="footer-bottom">
-
+            <nav class="container">
+                <div class="nav-left">
+                    <button>SIGN-UP NOW!</button>
+                </div>
+                <div class="nav-right">
+                    <span>FOLLOW US</span>
+                    <ul>
+                        <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope"></a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </footer>
 </template>
@@ -185,7 +199,6 @@ footer {
 
         nav {
             max-height: 100%;
-            padding: 0;
             @include flex(column);
             flex-wrap: wrap;
 
@@ -212,7 +225,7 @@ footer {
         }
 
         img {
-            height: 120%;
+            height: 150%;
             width: auto;
         }
     }
@@ -222,6 +235,50 @@ footer {
         background-color: $gray;
         position: relative;
         z-index: 1;
+
+        nav {
+            height: 100%;
+            @include flex(row, space-between, center);
+
+            button {
+                padding: 1rem;
+                background-color: transparent;
+                border: 2px solid $blue;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: $blue;
+                }
+            }
+
+            .nav-right {
+                @include flex(row, space-between, center);
+                gap: 1.5rem;
+
+                span {
+                    color: $blue;
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+
+                ul {
+                    display: flex;
+                    gap: 1rem;
+
+                    a {
+                        transition: filter 0.5s;
+
+                        &:hover {
+                            filter: brightness(200%);
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }
 </style>

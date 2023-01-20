@@ -75,6 +75,11 @@ export default {
             color: white;
             font-weight: bold;
             font-size: 14px;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
 
             img {
                 height: 40px;
