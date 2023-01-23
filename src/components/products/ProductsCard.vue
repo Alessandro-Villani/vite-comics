@@ -33,7 +33,7 @@ figure {
     }
 
     &:hover img {
-        box-shadow: 0 0 5px yellowgreen;
+        box-shadow: 0 0 5px $blue;
     }
 
     figcaption {
