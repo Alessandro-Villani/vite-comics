@@ -1,143 +1,7 @@
 <script>
 export default {
-    data() {
-        return {
-            sections: [
-                {
-                    name: 'dc comics',
-                    links: [
-                        {
-                            text: 'Characters',
-                            url: '#'
-                        },
-                        {
-                            text: 'Comics',
-                            url: '#'
-                        },
-                        {
-                            text: 'Movies',
-                            url: '#'
-                        },
-                        {
-                            text: 'TV',
-                            url: '#'
-                        },
-                        {
-                            text: 'Games',
-                            url: '#'
-                        },
-                        {
-                            text: 'Collectibles',
-                            url: '#'
-                        },
-                        {
-                            text: 'Videos',
-                            url: '#'
-                        },
-                        {
-                            text: 'Fans',
-                            url: '#'
-                        },
-                        {
-                            text: 'News',
-                            url: '#'
-                        },
-                        {
-                            text: 'Shop',
-                            url: '#'
-                        },
-                    ]
-                },
-                {
-                    name: 'shop',
-                    links: [
-                        {
-                            text: 'Shop DC',
-                            url: '#'
-                        },
-                        {
-                            text: 'Shop DC Collectibles',
-                            url: '#'
-                        },
-                    ]
-                },
-                {
-                    name: 'dc',
-                    links: [
-                        {
-                            text: 'Term Of Use',
-                            url: '#'
-                        },
-                        {
-                            text: 'Privacy Policy (New)',
-                            url: '#'
-                        },
-                        {
-                            text: 'Ad Choices',
-                            url: '#'
-                        },
-                        {
-                            text: 'Advertising',
-                            url: '#'
-                        },
-                        {
-                            text: 'Jobs',
-                            url: '#'
-                        },
-                        {
-                            text: 'Subscriptions',
-                            url: '#'
-                        },
-                        {
-                            text: 'Talent Workshops',
-                            url: '#'
-                        },
-                        {
-                            text: 'CPSC Certificates',
-                            url: '#'
-                        },
-                        {
-                            text: 'Ratings',
-                            url: '#'
-                        },
-                        {
-                            text: 'Shop Help',
-                            url: '#'
-                        },
-                        {
-                            text: 'Contact Us',
-                            url: '#'
-                        }
-                    ]
-                },
-                {
-                    name: 'sites',
-                    links: [
-                        {
-                            text: 'DC',
-                            url: '#'
-                        },
-                        {
-                            text: 'MAD Magazine',
-                            url: '#'
-                        },
-                        {
-                            text: 'DC Kids',
-                            url: '#'
-                        },
-                        {
-                            text: 'DC Universe',
-                            url: '#'
-                        },
-                        {
-                            text: 'DC Power Visa',
-                            url: '#'
-                        }
-                    ]
-                }
-            ]
-        }
-
+    props: {
+        sections: Array
     }
 }
 </script>
@@ -182,7 +46,7 @@ export default {
 @use '../assets/styles/partial/variables.scss' as *;
 
 footer {
-    height: calc(100vh - 400px);
+    height: 550px;
 
     .footer-top {
         height: calc(100% - 100px);
