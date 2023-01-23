@@ -1,7 +1,7 @@
 <script>
 export default {
     props: {
-        comic: Array
+        comic: Object
     }
 }
 </script>
