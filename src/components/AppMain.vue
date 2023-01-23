@@ -54,7 +54,7 @@ main {
     }
 
     .card {
-        flex-basis: calc((100% - 8rem) / 6);
+        flex-basis: calc(100% / 6);
     }
 }
 </style>
