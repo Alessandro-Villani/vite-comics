@@ -18,7 +18,7 @@ export default {
         <div class="container">
             <h3 class="title">{{ title }}</h3>
             <div class="content">
-                <ProductsCard v-for="comic in comicsData" :comic="comic" />
+                <ProductsCard v-for="comic in comicsData" :comic="comic" :key="comic.series" />
             </div>
             <AppButton :type="'primary'" text="load more" />
         </div>
