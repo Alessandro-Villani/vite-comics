@@ -1,6 +1,7 @@
 <script>
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
 import AppMain from './components/AppMain.vue';
 import ShopBar from './components/ShopBar.vue';
 import { menusData, shopLinks, comicsData } from './data';
@@ -13,14 +14,15 @@ export default {
             comicsData
         }
     },
-    components: { AppHeader, AppMain, ShopBar, AppFooter }
+    components: { AppHeader, AppMain, ShopBar, AppFooter, AppJumbotron }
 }
 
 </script>
 
 <template>
     <AppHeader :navLinks="menusData[0].links" />
-    <AppMain />
+    <AppJumbotron />
+    <AppMain title="current series" :comicsData="comicsData" />
     <ShopBar :items="shopLinks" />
     <AppFooter :sections="menusData" />
 </template>
