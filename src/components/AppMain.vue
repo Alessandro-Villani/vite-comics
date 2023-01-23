@@ -1,4 +1,5 @@
 <script>
+import AppButton from './generics/AppButton.vue';
 import ProductsCard from './products/ProductsCard.vue';
 
 
@@ -7,7 +8,7 @@ export default {
         title: String,
         comicsData: Array
     },
-    components: { ProductsCard }
+    components: { ProductsCard, AppButton }
 }
 
 </script>
@@ -19,6 +20,7 @@ export default {
             <div class="content">
                 <ProductsCard v-for="comic in comicsData" :comic="comic" />
             </div>
+            <AppButton :type="'primary'" text="load more" />
         </div>
     </main>
 </template>
@@ -31,11 +33,14 @@ main {
     background-color: $black;
     min-height: 150px;
     position: relative;
+    text-align: center;
+    padding-bottom: 1rem;
 
     .content {
         display: flex;
         flex-wrap: wrap;
         padding: 2rem 0;
+        text-align: start;
     }
 
     h3 {

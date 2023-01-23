@@ -1,8 +1,11 @@
 <script>
+import AppButton from './generics/AppButton.vue';
+
 export default {
     props: {
         sections: Array
-    }
+    },
+    components: { AppButton }
 }
 </script>
 
@@ -24,7 +27,7 @@ export default {
         <div class="footer-bottom">
             <nav class="container">
                 <div class="nav-left">
-                    <button>SIGN-UP NOW!</button>
+                    <AppButton :type="['primary', 'outline']" text="Sign-up now" />
                 </div>
                 <div class="nav-right">
                     <span>FOLLOW US</span>
@@ -103,20 +106,6 @@ footer {
         nav {
             height: 100%;
             @include flex(row, space-between, center);
-
-            button {
-                padding: 1rem;
-                background-color: transparent;
-                border: 2px solid $blue;
-                color: white;
-                font-weight: bold;
-                cursor: pointer;
-                transition: all 0.5s;
-
-                &:hover {
-                    background-color: $blue;
-                }
-            }
 
             .nav-right {
                 @include flex(row, space-between, center);
